@@ -24,6 +24,28 @@
 <body>
 <!-- https://stackoverflow.com/questions/10068963/how-to-parse-xml-cross-domain-in-jquery -->
 <h1>Yenes a Euros</h1>
+<form class="frConverter">
+	<table border="0" cellpadding="3" cellspacing="0">
+		<tr>
+			<td>From JPY</td>
+			<td>
+				<input type="hidden" name="base_currency" value="jpy">
+			</td>
+			<td>
+				<input type="text" name="base_value" size="10" value="100">
+			</td>
+		</tr>
+		<tr>
+			<td>To EUR</td>
+			<td>
+				<input type="hidden" name="target_currency" value="eur">
+			</td>
+			<td>
+				<input type="text" name="target_value" size="10" value="">
+			</td>
+		</tr>
+	</table>
+</form>
 <table id="demo"></table>
 
 <script>
